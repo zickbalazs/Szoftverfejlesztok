@@ -1,0 +1,13 @@
+body{
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height: 15px;
+}
+section div img{
+    float: left;
+    width: 20%;
+    height: 20%;
+}
+div p{
+    text-indent: 15px;
+}
