@@ -15,10 +15,19 @@ body{
 .container{
     height: 100%;
 }
+p#id{
+    font-style: italic;
+    font-size: larger;
+    text-decoration: underline;   
+}
 a{
     text-decoration: none;
     color:lightgray;
     transition: color 0.1s, font-size 0.1s, letter-spacing 0.1s;
+    font-size: large;
+}
+#motto{
+    margin-bottom: 0;
 }
 a:hover{
     color:white;
@@ -28,16 +37,23 @@ a:active{
     letter-spacing: 3px;
     font-size: large;
 }
-nav#mobilnav>div>p{
+nav#mobilnav>div>p, nav#mobilnav>div>img{
     display:inline-block;
+    vertical-align: middle;
+}
+nav#mobilnav>div>img{
+    height: 20px;
 }
 nav#desktopnav>div>p{
     margin:0;
     padding:10px;
     text-align: center;
+    
 }
 nav#desktopnav{
     display:block;
+    overflow: hidden;
+    position: sticky;
 }
 nav#mobilnav{
     display:none;
@@ -58,10 +74,10 @@ header{
 }
 header h1{
     margin: 0;
-    color:honeydew;
-    padding: 125px;
-    text-shadow: 1px 1px 4px white;
-    font-size:3em;
+    color:rgba(0, 16, 80, 0.8);
+    padding:10vh;
+    text-shadow:0 0 4px white;
+    font-size: 5vw;
 }
 article{
     text-align: center;
@@ -79,8 +95,12 @@ footer{
 footer>h3{
     margin:0;
 }
+footer>p>a{
+    font-size: small;
+}
 article>h2{
     margin: 0;
+    font-size:larger;
 }
 iframe{
     width: 50%;
@@ -93,7 +113,13 @@ h2:last-of-type{
     padding:10px;
 }
 p[name="anomalous"]{
+    margin-top: 0;
     transition:background 0.3s ease-in-out, color 0.1s;
+    text-align: center;
+}
+q{
+    font-style: italic;
+    font-size: larger;
 }
 p[name="anomalous"]:hover{
     color:transparent;
@@ -102,12 +128,24 @@ p[name="anomalous"]:hover{
     background-position: center;
     background-size: contain;
 }
+p{
+    font-size:large;
+}
 @media screen and (max-width:728px){
     nav#mobilnav{
         display:block;
+        font-size: large;
+    }
+    nav#mobilnav>div>p>a{
+        font-size:large;
+    }
+    nav#mobilnav>div>img{
+        height: 50px;
     }
     header h1{
-        font-size: large;
+        padding:10vh;
+        font-size: 8vw;
+        color: rgba(0,0,0,0.9);
     }
     nav#desktopnav{
         display:none;
@@ -115,5 +153,24 @@ p[name="anomalous"]:hover{
     iframe{
         width: 90%;
         height: 500px;
+    }
+    p{
+        font-size: larger;
+    }
+    q{
+        font-size: large;
+    }
+    article>h2{
+        font-size:x-large;
+    }
+}
+@media screen and (max-width:300px){
+    nav#mobilnav>div>img{
+        display:none;
+    }
+    nav#mobilnav>div>p{
+        display:block;
+        margin:0;
+        padding:10px;
     }
 }
