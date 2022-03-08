@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Montserrat:wght@300&family=PT+Sans&display=swap');
+html{
+    padding:0;
+    margin:0;
+}
+body{
+    margin:0;
+    padding:0;
+    width: 100%;
+    font-family: 'Assistant', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    color:honeydew;
+}
+.container{
+    height: 100%;
+}
+p#id{
+    font-style: italic;
+    font-size: larger;
+    text-decoration: underline;   
+}
+a{
+    text-decoration: none;
+    color:lightgray;
+    transition: color 0.1s, font-size 0.1s, letter-spacing 0.1s;
+    font-size: large;
+}
+#motto{
+    margin-bottom: 0;
+}
+a:hover{
+    color:white;
+    font-size: larger;
+}
+a:active{
+    letter-spacing: 3px;
+    font-size: large;
+}
+nav#mobilnav>div>p, nav#mobilnav>div>img{
+    display:inline-block;
+    vertical-align: middle;
+}
+nav#mobilnav>div>img{
+    height: 20px;
+}
+nav#desktopnav>div>p{
+    margin:0;
+    padding:10px;
+    text-align: center;
+    
+}
+nav#desktopnav{
+    display:block;
+    overflow: hidden;
+    position: sticky;
+}
+nav#mobilnav{
+    display:none;
+}
+.link{
+    color:white;
+    text-decoration: none;
+}
+nav{
+    width: 100%;
+    background: linear-gradient(black 40%, rgb(26, 32, 32));
+}
+header{
+    text-align: center;
+    background-image: url('../kepek/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header h1{
+    margin: 0;
+    color:rgba(0, 16, 80, 0.8);
+    padding:10vh;
+    text-shadow:0 0 4px white;
+    font-size: 5vw;
+}
+article{
+    text-align: center;
+    background-color:black;
+    padding-top:5%;
+    padding-bottom: 5%;
+}
+
+footer{
+    background-color:rgb(58, 55, 55);
+    padding-top: 25px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+}
+footer>h3{
+    margin:0;
+}
+footer>p>a{
+    font-size: small;
+}
+article>h2{
+    margin: 0;
+    font-size:larger;
+}
+iframe{
+    width: 50%;
+    height: 300px;
+    box-shadow: 1px 1px 12px white;
+    border: 1px white solid;
+    border-radius: 5px;
+}
+h2:last-of-type{
+    padding:10px;
+}
+p[name="anomalous"]{
+    margin-top: 0;
+    transition:background 0.3s ease-in-out, color 0.1s;
+    text-align: center;
+}
+q{
+    font-style: italic;
+    font-size: larger;
+}
+p[name="anomalous"]:hover{
+    color:transparent;
+    background-image: url('../kepek/IMG_0118.JPG');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+p{
+    font-size:large;
+}
+@media screen and (max-width:728px){
+    nav#mobilnav{
+        display:block;
+        font-size: large;
+    }
+    nav#mobilnav>div>p>a{
+        font-size:large;
+    }
+    nav#mobilnav>div>img{
+        height: 50px;
+    }
+    header h1{
+        padding:10vh;
+        font-size: 8vw;
+        color: rgba(0,0,0,0.9);
+    }
+    nav#desktopnav{
+        display:none;
+    }
+    iframe{
+        width: 90%;
+        height: 500px;
+    }
+    p{
+        font-size: larger;
+    }
+    q{
+        font-size: large;
+    }
+    article>h2{
+        font-size:x-large;
+    }
+}
+@media screen and (max-width:300px){
+    nav#mobilnav>div>img{
+        display:none;
+    }
+    nav#mobilnav>div>p{
+        display:block;
+        margin:0;
+        padding:10px;
+    }
+}
