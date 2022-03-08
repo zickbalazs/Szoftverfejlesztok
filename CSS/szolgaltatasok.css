@@ -6,6 +6,37 @@ body{
     height: 100%;
     color: white;
 }
+a{
+    text-decoration: none;
+    color:lightgray;
+    transition: color 0.1s, font-size 0.1s, letter-spacing 0.1s;
+}
+a:hover{
+    color:white;
+    font-size: larger;
+}
+a:active{
+    letter-spacing: 3px;
+    font-size: large;
+}
+nav{
+    width: 100%;
+    background: linear-gradient(black 40%, rgb(26, 32, 32));
+}
+nav#mobilnav>div>p{
+    display:inline-block;
+}
+nav#desktopnav>div>p{
+    margin:0;
+    padding:10px;
+    text-align: center;
+}
+nav#desktopnav{
+    display:block;
+}
+nav#mobilnav{
+    display:none;
+}
 html{
     height: 100%;
 }
@@ -58,4 +89,12 @@ section div p{
 footer{
     text-align: center;
     font-size: 8    pt;
+}
+@media screen and (max-width:728px){
+    nav#mobilnav{
+        display:block;
+    }
+    nav#desktopnav{
+        display:none;
+    }
 }
