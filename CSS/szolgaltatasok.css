@@ -34,3 +34,27 @@ aside ul h2{
 footer p{
     margin: 0%;
 }
+article h2{
+    padding-top: 20px;
+}
+main p{
+    margin: auto;
+}
+article div img{
+    float:right;
+    height: 250px;
+    margin-right: 70px;
+    display: inline;
+    margin-top: 100px;
+}
+article p{
+    line-height: 45px;
+}
+section div p{
+    margin-right: 50px;
+    margin-left: 400px;
+}
+footer{
+    text-align: center;
+    font-size: 8    pt;
+}
