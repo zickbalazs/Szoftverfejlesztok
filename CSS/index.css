@@ -58,7 +58,7 @@ header{
 }
 header h1{
     margin: 0;
-    color:honeydew;
+    color:rgba(228, 255, 228, 0.87);
     padding: 125px;
     text-shadow: 1px 1px 4px white;
     font-size:3em;
@@ -66,8 +66,23 @@ header h1{
 article{
     text-align: center;
     background-color:black;
-    padding-top:5%;
+    padding-top:1.5%;
     padding-bottom: 5%;
+}
+button{
+    margin-bottom: 16px;
+    border: honeydew 1px solid;
+    border-radius: 10px;
+    background-color: transparent;
+    color: honeydew;
+    padding:20px;
+    font-size: large;
+    
+    transition: background-color 0.2s ease-in, color 0.2s ease-out;
+}
+button:hover{
+    color: black;
+    background-color: honeydew;
 }
 
 footer{
@@ -111,6 +126,7 @@ p[name="anomalous"]:hover{
     }
     nav#desktopnav{
         display:none;
+        color:rgb(228, 255, 228);
     }
     iframe{
         width: 90%;
